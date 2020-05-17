@@ -1,0 +1,209 @@
+body {
+	margin : 0px; 
+} 
+
+div, button, span {
+	position: absolute;
+} 
+
+span:nth-child(1) {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: arial;
+}
+
+#board {  
+	left: 45%;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 40%;    
+	padding-bottom: 40%;  
+}
+
+#board > div {
+	background-color: #ddd;  
+	width: 8%;  
+	padding-bottom: 8%;    
+	border-radius: 50%;
+	border: 3px solid #555; 
+}
+
+#board > div > span:nth-child(1) {  	 
+	font-size: 1.6vw; 
+	color: #777; 
+}
+
+.pawn {  
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	display: none;
+	z-index: 1;
+}
+
+.player_1 {
+	display: block;
+	background-color: #2ECC71;
+}
+
+.player_2 {
+	display: block;
+	background-color: #E74C3C;
+}
+
+#start_player_1, #start_player_2 {
+	width: 15%; 
+	padding-bottom: 15%;
+	border-radius: 50%;
+	border: 3px solid #555; 
+	top: 10%;  
+	transform: translate(-50%, 0);
+	color: #777;
+	font-size: 3vw;  
+
+}
+
+#start_player_1 {   
+	left: 40%; 
+}
+
+#start_player_1[class='filled'] {    
+	background-color: #2ECC71;
+}
+
+#start_player_1[class='empty'] {
+	background-color: #ABEBC6;
+}
+
+#start_player_2 { 
+	left: 60%;
+}
+
+#start_player_2[class='filled'] {
+	background-color: #E74C3C;
+}
+
+#start_player_2[class='empty'] {
+	background-color: #F5B7B1;
+} 
+
+#panel {  
+	width: 40%;
+	padding-bottom: 40%; 
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+
+button { 
+	width: 10%;
+	height: 10%;
+	transform: translate(-50%, -50%);
+}
+
+#roll {
+	top: 42%;
+	left: 50%;
+	background-color: #666;
+	border: 2px solid #555;
+	width: 15%;
+	font-size: 1.5vw;
+	color: #fff;   
+}
+
+
+.dice {
+	background-color: #89a;
+	border: 2px solid #555;
+	top: 42%;
+	width: 15%;
+	height: 15%;
+	transform: translate(-50%, -50%);
+}
+
+.dice > span {
+	font-size: 2vw;
+	color: #fff;  
+}
+
+#roll:hover {
+	background-color: #555;
+}
+
+#first_die { 
+	left: 35%; 
+}
+
+#second_die {
+	left: 65%;
+}
+
+.operator {
+	background-color: #9ab;
+	border: 3px solid #567;
+	transform: translate(-50%, -50%);
+	font-size: 2vw;
+	color: white; 
+}
+
+.operator:focus, #roll:focus {
+	outline: 0;
+}
+
+.operator:hover {
+	background-color: #567;
+}
+
+#sum {
+	left: 44%;
+	top: 62%;
+	border-top-left-radius: 100%;
+}
+
+#subtract {
+	left: 56%;
+	top: 62%;
+	border-top-right-radius: 100%;
+}
+
+#multiply {
+	left: 44%;
+	top: 74%;
+	border-bottom-left-radius: 100%;
+}
+
+#divide {
+	left: 56%;
+	top: 74%;
+	border-bottom-right-radius: 100%;
+}
+
+#msg { 
+	left: 50%;
+	top: 83%;
+	transform: translate(-50%, 0);
+	width: 50%;
+	height: 15%;
+}
+
+#msg > span { 
+	font-size: 2vw;
+	color: #fff; 
+}
+
+.no_winner { 
+	background-color: #ccc;
+	border: 3px solid #bbb;
+}
+
+.winner_msg_1 {
+	background-color: #2ECC71;
+	border: 3px solid #555;
+}
+
+.winner_msg_2 {
+	background-color: #E74C3C;
+	border: 3px solid #555;
+}
+

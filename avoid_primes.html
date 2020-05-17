@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="avoid_primes.js"></script>
+		<script type="text/javascript" src="roll_dice.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>   
+		<div id="panel">
+			<div id="start_player_1" class="filled"><span></span></div>
+			<div id="start_player_2" class="filled"><span></span></div>
+			<div id="first_die" class="dice"><span>?</span></div>
+			<div id="second_die" class="dice"><span>?</span></div> 
+			<button id="roll">Roll</button>
+			<button id="sum" class="operator">+</button> 
+			<button id="subtract" class="operator">-</button> 
+			<button id="multiply" class="operator">×</button> 
+			<button id="divide" class="operator">÷</button> 
+			<div id="msg" class="no_winner"><span>Winner?</span></div>
+		</div>
+		<div id="board"></div>  
+	</body>
+</html>
